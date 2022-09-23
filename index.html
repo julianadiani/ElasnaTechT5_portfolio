@@ -9,7 +9,8 @@
         <!-- CSS -->
         <link href="css/style.css" type="text/css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+		<link rel="stylesheet" href="css/uikit.min.css" />
+		
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
    
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/"><span class="logo-ju">Juliana Diani</span></a>
+            <a class="navbar-brand" href="index.html#top"><span class="logo-ju">Juliana Diani</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,13 +28,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Início</a>
+                            <a class="nav-link" href="index.html#top">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="index.html#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projetos</a>
+                            <a class="nav-link" href="index.html#projetos">Projetos</a>
                         </li>
                         <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -48,7 +49,7 @@
                         </li>-->
 
                         <form class="form-inline">
-                            <button class="btn btn-outline-light" type="button">Contato</button>
+                            <a class="btn btn-outline-light" href="contato.html">Contato</a>
                         </form>
                     </ul>
                 </div>
@@ -56,7 +57,7 @@
         </nav>
     
 
-       <section class="banner-topo">
+       <section class="banner-topo" id="top">
            <div class="container">
                <div class="row">
                     <div class="col-md-12 col-lg-12 col-xs-12">
@@ -67,14 +68,71 @@
             </div>
        </section>
 
-       <section class="projetos">
+       <section class="projetos" id="projetos">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-xs-12">
-                        <h2>Projetos</h2>
+                        <h2>Conheça meus Projetos</h2>
                     </div>
+					
+					<div class="col-md-12">
+						<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
-                    <div class="col-md-6 col-lg-6 col-xs-12">
+							<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-3@m" uk-lightbox="animation: slide">
+								<li>
+									<div class="uk-panel">
+										<a href="images/ltw-site.png"><img src="images/ltw-site.png" width="95%" height="auto" alt=""></a>
+										<div class="uk-position-left uk-content">
+											<h2>LTW Bank</h2>
+											<p>Site foi de um banco digital e novo no mercado, o objetivo era apresentar a marca de uma maneira inovadora e profissional.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-panel">
+										<a href="images/grupo-dlg-site.jpg"><img src="images/grupo-dlg-site.jpg" width="95%" height="auto" alt=""></a>
+										<div class="uk-position-left uk-content">
+											<h2>Grupo Dlg</h2>
+											<p>O objetivo do site era ser clean e moderno, dando destaque para os serviços de transporte para E-commerce.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-panel">
+										<a href="images/flexocom-site.jpg"><img src="images/flexocom-site.jpg" width="95%" height="auto" alt=""></a>
+										<div class="uk-position-left uk-content">
+											<h2>Flexocom</h2>
+											<p>Desenvolvido com o objetivo de apresentar todas as soluções do site de maneira clara e de fácil interpretação.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="uk-panel">
+										<a href="images/focinho-site.jpg"><img src="images/focinho-site.jpg" width="95%" height="auto" alt=""></a>
+										<div class="uk-position-left uk-content">
+											<h2>Focinho Gelado</h2>
+											<p>Site desenvolvido para a Focinho Gelado, uma empresa especializada em dietas para cães. </p>
+										</div>
+									</div>
+								</li>
+								<!--<li>
+									<div class="uk-panel">
+										<img src="images/ltw-zoom-1.jpg" width="95%" height="auto" alt="">
+										<div class="uk-position-center uk-text-center">
+											<h2 uk-slider-parallax="x: 100,-100">Heading</h2>
+											<p uk-slider-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+										</div>
+									</div>
+								</li>-->
+							</ul>
+
+							<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+							<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+						</div>
+					</div>
+					
+                   <!-- <div class="col-md-4 col-lg-4 col-xs-12">
                         <div class="card bg-dark text-white">
                             <img class="card-img" src="images/ltw-zoom-1.jpg" alt="Card image">
                             <div class="card-img-overlay">
@@ -84,7 +142,7 @@
                           </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-6 col-xs-12">
+                    <div class="col-md-4 col-lg-4 col-xs-12">
                         <div class="card bg-dark text-white">
                             <img class="card-img" src="images/grupo-dlog-zoom1.jpg" alt="Card image">
                             <div class="card-img-overlay">
@@ -94,12 +152,21 @@
                           </div>
                     </div>
 
-                    
+                    <div class="col-md-4 col-lg-4 col-xs-12">
+                        <div class="card bg-dark text-white">
+                            <img class="card-img" src="images/grupo-dlog-zoom1.jpg" alt="Card image">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Flexocom</h5>
+                              <p class="card-text">Site foi desenvolvido com o objetivo de apresentar todas as soluções do site de maneira clara e de fácil interpretação, com um layout moderno e bem estruturado.</p>
+                            </div>
+                          </div>
+                    </div>-->
                 </div>
             </div>
        </section>
+	   
 
-       <section class="sobre">
+       <section class="sobre" id="sobre">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-lg-4 text-center col-xs-12">
@@ -176,6 +243,18 @@
              </div>
          </div>
     </section>
+	
+	<section class="cta-banner">
+           <div class="container">
+               <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xs-12">
+                         <h2>Precisa de ajuda com um projeto?</h2>
+                        <p>Entre em contato para batermos um papo.</p>
+						<a href="contato.html">ENVIE UMA MENSAGEM</a>
+                    </div>
+                </div>
+            </div>
+       </section>
 
     <footer>
         <div class="container">
@@ -193,6 +272,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        
+        <script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>
     </body>
 </html>
